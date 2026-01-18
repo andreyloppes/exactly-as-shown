@@ -9,6 +9,9 @@ import LideresPage from "@/pages/LideresPage";
 import LiderDetalhePage from "@/pages/LiderDetalhePage";
 import EquipeDetalhePage from "@/pages/EquipeDetalhePage";
 import ColportorDetalhePage from "@/pages/ColportorDetalhePage";
+import AtividadesPage from "@/pages/AtividadesPage";
+import FinanceiroPage from "@/pages/FinanceiroPage";
+import SWOTPage from "@/pages/SWOTPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,9 +30,9 @@ const App = () => (
             <Route path="/lideres/:liderId/equipes/:equipeId" element={<EquipeDetalhePage />} />
             <Route path="/lideres/:liderId/equipes/:equipeId/colportores/:colportorId" element={<ColportorDetalhePage />} />
             <Route path="/metas" element={<Dashboard />} />
-            <Route path="/atividades" element={<Dashboard />} />
-            <Route path="/financeiro" element={<Dashboard />} />
-            <Route path="/swot" element={<Dashboard />} />
+            <Route path="/atividades" element={<AtividadesPage />} />
+            <Route path="/financeiro" element={<FinanceiroPage />} />
+            <Route path="/swot" element={<SWOTPage />} />
             <Route path="/mapa" element={<Dashboard />} />
           </Route>
           <Route path="*" element={<NotFound />} />
